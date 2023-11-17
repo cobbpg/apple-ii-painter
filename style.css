@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="file"] {
+    width: 70px;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    width: 1126px;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.pickerButton {
+    height: 40px;
+    width: 40px;
+    padding: 0 1em;
+    font-size: 25px;
+    font-weight: bold;
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageBox {
+    border: 3px solid #000;
+    border-radius: 3px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#image {
+    vertical-align: middle;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple II HGR Painter</title>
+</head>
+<body>
+    <div class="navbar">
+        <label for="importBinary">Import Binary: </label><input id="importBinary" type="file">
+        <label for="importImage">Load Reference Image: </label><input id="importImage" type="file">
+        Opacity: <input id="canvasOpacity" type="range" min="1" max="100" value="100" class="slider">
+        Export Binary: <input id="exportBinaryName" value="image.hgr">
+        <button id="exportBinary">Export</button>
+    </div>
+    <div class="navbar">
+        <label><input id="monochrome" type="checkbox"> Monochrome</label>
+        &nbsp;
+        <button class="pickerButton colorButton" style="background:#6fe62c">Q</button>
+        <button class="pickerButton colorButton" style="background:#aa1ad1">W</button>
+        <button class="pickerButton colorButton" style="background:#ff7247">E</button>
+        <button class="pickerButton colorButton" style="background:#008ab5">R</button>
+        &nbsp;
+        <button class="pickerButton patternButton" style="background:#000000">1</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#808080 0% 25%, #000000 0% 50%) 0% 0% / 10px 10px">2</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#000000 0% 25%, #808080 0% 50%) 0% 0% / 10px 10px">3</button>
+        <button class="pickerButton patternButton" style="background:#808080">4</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#808080 0% 25%, #ffffff 0% 50%) 0% 0% / 10px 10px">5</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#ffffff 0% 25%, #808080 0% 50%) 0% 0% / 10px 10px">6</button>
+        <button class="pickerButton patternButton" style="background:#ffffff">7</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#000000 0% 25%, #ffffff 0% 50%) 0% 0% / 10px 10px">8</button>
+        <button class="pickerButton patternButton" style="background:repeating-conic-gradient(#ffffff 0% 25%, #000000 0% 50%) 0% 0% / 10px 10px">9</button>
+    </div>
+    <div id="imageBox"><canvas id="image" width="1120" height="768"></canvas></div>
+    <script src="filesaver.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
